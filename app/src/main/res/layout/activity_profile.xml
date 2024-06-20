@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#043B5C"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="360dp"
+        android:layout_height="600dp"
+        android:backgroundTint="#FBF7FF"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:padding="25dp">
+
+            <TextView
+                android:id="@+id/head_prof"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="User Profile"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#043B5C"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/prof_name_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/edit_border"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="jjfbcj"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#302F34"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/prof_email_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/edit_border"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="jjfbcj"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#302F34"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_upload_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="4dp"
+                    android:backgroundTint="#302F34"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Upload"
+                    android:textColor="#FBF7FF"
+                    android:textSize="18dp"
+                    app:cornerRadius="10dp" />
+
+                <Button
+                    android:id="@+id/button_choose_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="4dp"
+                    android:backgroundTint="#302F34"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Choose"
+                    android:textColor="#FBF7FF"
+                    android:textSize="18dp"
+                    app:cornerRadius="10dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_save_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#043B5C"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Save"
+                android:textColor="#FBF7FF"
+                android:textSize="18dp"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/bt_delete_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#302F34"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Delete"
+                android:textColor="#FBF7FF"
+                android:textSize="18dp"
+                app:cornerRadius="10dp" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+

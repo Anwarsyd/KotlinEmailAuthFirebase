@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "445389925499",
+    "project_id": "mfirebase-1db34",
+    "storage_bucket": "mfirebase-1db34.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:445389925499:android:e74cf80f38bcccdd6e86de",
+        "android_client_info": {
+          "package_name": "cusat.ddukk.mfirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCo9RPMbTvSP6aQOwEdb3baRgsYTiWbtKw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
