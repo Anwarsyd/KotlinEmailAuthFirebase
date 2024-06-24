@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -22,7 +23,7 @@ class LoginActivity : AppCompatActivity() {
         var password_login = findViewById<EditText>(R.id.password_log)
         var button_login = findViewById<Button>(R.id.button_log)
 
-        var button_registered = findViewById<Button>(R.id.bt_delete_profile)
+        var textRegistered = findViewById<TextView>(R.id.bt_regesterd_profile)
 
         firebaseAuth = FirebaseAuth.getInstance()
 
@@ -49,9 +50,9 @@ class LoginActivity : AppCompatActivity() {
             }
         }
 
-        button_registered.setOnClickListener {
-            var i = Intent(applicationContext,MainActivity::class.java)
-            startActivity(i)
+        textRegistered.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
     }
 }
